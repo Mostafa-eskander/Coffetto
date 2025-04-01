@@ -1,0 +1,416 @@
+:root {
+    --main-color: #2b1712;
+    --second-color: #4a2d26;
+    --three-color:#361e18;
+    --font-color: #ddb66e;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1120px;
+    }
+}
+.header_border {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, #847571 50%, transparent 50%);
+    background-size: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: opacity .3s;
+}
+.header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-color);
+    color: white;
+    padding: 20px 0;
+}
+.header .container,.list,.header .container  h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container h4 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.header .container  h4 img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.list li{
+    margin-left: 80px;
+}
+.list li a {
+    transition: .5s;
+}
+.list li#active a,.list li a:hover{
+    color: var(--font-color);
+}
+.landing {
+    padding: 140px 10px 50px 10px ;
+    background-image: linear-gradient(to bottom,var(--second-color),var(--main-color));
+}
+.landing .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.landing .image img {
+    width: 590px;
+}
+.landing .text {
+    margin-top: -160px;
+}
+.landing .text h2 {
+    color: var(--font-color);
+    margin-bottom: 50px;
+}
+.landing .text h4{
+    font-size: 80px;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+.landing .text h4 img {
+    width: 90px;
+}
+.landing .text p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+.landing .text span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--font-color);
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.landing .text span img {
+    width: 10px;
+    margin-left: 10px;
+}
+.product {
+    background-color: var(--main-color);
+    padding-top: 30px;
+}
+.product .bagr {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--second-color);
+    border-radius: 100px 100px 0px 0px;
+}
+.product .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product .text span {
+    display: flex;
+    align-items: center;
+    background-color: var(--font-color);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.product .text span img {
+    width: 15px;
+    margin-left: 10px;
+}
+.product .text p {
+    color: white;
+    line-height: 25px;
+}
+.product .image {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.product .image .box {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+.product .image .box img {
+    position: relative;
+    width: 110px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}   
+.product .image .box img:hover {
+    animation: 1s infinite topDown;
+}
+.product .image .box div {
+    text-align: center;
+}
+.product .image .box div h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.product .image .box div span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.history {
+    padding-top: 100px;
+    background: var(--second-color);
+}
+.history .hisback {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 100px 100px 0 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.history .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.history .image img {
+    width: 550px;
+    border-radius: 30px;
+}
+.history .text {
+    margin-top: -80px;
+    margin-left: 80px;
+}
+.history .text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.history .text p {
+    font-size: 22px;
+    line-height: 30px;
+}
+.steps {
+    padding-top: 100px;
+}
+.steps .steback {
+    background: var(--second-color);
+    border-radius: 100px 100px 0 0;
+    position: relative;
+}
+.steps .steback::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/steps0.png);
+    opacity: .15;
+    object-position: initial;
+}
+.steback .container {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: white;
+}
+.steps h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+} 
+.steps .pro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.steps .pro .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background: #65463E;
+}
+.special {
+    top: 200px;
+}
+.steps .pro .box span {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--font-color);
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -15px;
+    left: -15px;
+    border: 15px solid var(--second-color);
+}
+.steps .pro img {
+    width: 200px;
+}
+.steps .pro .box p {
+    width: fit-content;
+    width: 180px;
+}
+.test {
+    padding-top: 150px;
+    background-color: var(--second-color);
+}
+.test .testback {
+    background-color: white;
+    border-radius: 100px 100px 0 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.test .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.test .text p {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.test .text h4 {
+    color: #979797;
+}
+.test .image img {
+    width: 500px;
+    border-radius: 20px;
+}
+.end {
+    background-color: white;
+}
+.end .endback {
+    border-radius: 100px 100px 0 0;
+    background-color: var(--three-color);
+    padding: 100px 0;
+}
+.end .container .singup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.end .container .singup .text h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.end .container .singup .text h4 img {
+    width: 32px;
+    margin-right: 5px;
+}
+.end .container .singup .text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.end .container .singup .inp input {
+    display: block;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.end .container .singup .inp #te{
+    background-color: transparent;
+    border: 3px solid #847571;
+    outline: none;
+    color: white;
+}
+.end .container .singup .inp #su {
+    background-color: var(--font-color);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.end .container .singup .inp p span {
+    color: var(--font-color);
+    cursor: pointer;
+}
+.end .container .icon {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.end .container .icon i{
+    margin-right: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.end .container .icon i:last-child  {
+    margin-right: 0;
+}
+.end .container .endly {
+    text-align: center;
+}
+.end .container .endly span {
+    color: #847672;
+}
+#up {
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    background-color: var(--font-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@keyframes topDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: -10px;
+    }
+}
