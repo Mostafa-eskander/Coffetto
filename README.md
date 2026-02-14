@@ -3,26 +3,26 @@ Coffetto is a modern, responsive coffee website designed to present premium coff
 This project demonstrates strong front-end development skills including responsive design, layout structuring, and creating visually appealing user interfaces suitable for real-world business use cases.
 
 ## ✨ Features
--✅ Modern and clean UI design
--✅ Fully responsive layout (Mobile, Tablet, Desktop)
--✅ Coffee products showcase section
--✅ About section with brand story
--✅ Coffee manufacturing / production steps section
--✅ Newsletter subscription section
--✅ Structured and organized layout
--✅ Smooth and user-friendly navigation
--✅ Realistic business website design
+- ✅ Modern and clean UI design
+- ✅ Fully responsive layout (Mobile, Tablet, Desktop)
+- ✅ Coffee products showcase section
+- ✅ About section with brand story
+- ✅ Coffee manufacturing / production steps section
+- ✅ Newsletter subscription section
+- ✅ Structured and organized layout
+- ✅ Smooth and user-friendly navigation
+- ✅ Realistic business website design
 
 ## 🌐 Live Demo
 [live demo](https://mostafa-eskander.github.io/Coffetto/)
 
 ### 🛠️ Technologies Used
--HTML5
--CSS3
--JavaScript
--Responsive Design (Flexbox)
--Git & GitHub
--GitHub Pages (Deployment)
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design (Flexbox)
+- Git & GitHub
+- GitHub Pages (Deployment)
 
 ## 📁 Project Structure
 Coffetto/ 
@@ -53,11 +53,11 @@ cd Coffetto
 Open index.html in your browser
 
 ## 📌 Future Improvements
--Add backend integration
--Add shopping cart functionality
--Add authentication system
--Improve animations and interactions
--Convert to React version
+- Add backend integration
+- Add shopping cart functionality
+- Add authentication system
+- Improve animations and interactions
+- Convert to React version
 
 #### ⭐ Support
 If you like this project, please give it a ⭐ on GitHub!
