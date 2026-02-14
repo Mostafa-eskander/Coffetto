@@ -26,6 +26,7 @@ This project demonstrates strong front-end development skills including responsi
 - GitHub Pages (Deployment)
 
 ## 📁 Project Structure
+```
 Coffetto/ 
 │ 
 ├── index.html 
@@ -35,16 +36,17 @@ Coffetto/
 ├── images/ 
 │ 
 └── README.md
+```
 
 ### 🎯 Project Purpose
 The main goal of this project is to practice and demonstrate:
 
--Building responsive websites
--Creating professional UI layouts
--Structuring real-world business websites
--Improving front-end development skills
--Writing clean and maintainable code
--Deploying projects using GitHub Pages
+- Building responsive websites
+- Creating professional UI layouts
+- Structuring real-world business websites
+- Improving front-end development skills
+- Writing clean and maintainable code
+- Deploying projects using GitHub Pages
 
 ### 🚀 How to Run Locally
 Clone the repository
