@@ -49,11 +49,13 @@ The main goal of this project is to practice and demonstrate:
 - Deploying projects using GitHub Pages
 
 ### 🚀 How to Run Locally
+```
 Clone the repository
 git clone https://github.com/mostafa-eskander/Coffetto.git
 Open the project folder
 cd Coffetto
 Open index.html in your browser
+```
 
 ## 📌 Future Improvements
 - Add backend integration
